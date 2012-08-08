@@ -1,0 +1,33 @@
+tell application "Google Chrome"
+    activate
+end tell
+
+tell application "System Events"
+    tell process "Google Chrome"
+        delay (2)
+        repeat 6 times
+            key down space
+            delay (0.3)
+            key up space
+            delay (0.75)
+        end repeat
+        repeat 4 times
+            key down space
+            delay (0.5)
+            key up space
+            delay (0.75)
+        end repeat
+        repeat 4 times
+            key down space
+            delay (0.75)
+            key up space
+            delay (0.75)
+        end repeat
+        repeat 7 times
+            key down space
+            delay (0.9)
+            key up space
+            delay (0.75)
+        end repeat
+    end tell
+end tell
