@@ -1,0 +1,17 @@
+tell application "Google Chrome"
+   activate
+end tell
+
+tell application "System Events"
+   tell process "Google Chrome"
+      delay (2)
+      set endRace to (current date) + (0.2 * minutes)
+      repeat until (current date) > endRace
+         key code 123
+         key code 124
+         key code 123
+         key code 124
+         key code 49
+      end repeat
+   end tell
+end tell
