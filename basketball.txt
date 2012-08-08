@@ -5,7 +5,7 @@ end tell
 tell application "System Events"
     tell process "Google Chrome"
         delay (2)
-        repeat 6 times
+        repeat 5 times
             key down space
             delay (0.3)
             key up space
@@ -13,21 +13,27 @@ tell application "System Events"
         end repeat
         repeat 4 times
             key down space
-            delay (0.5)
+            delay (0.55)
             key up space
-            delay (0.75)
+            delay (0.7)
         end repeat
         repeat 4 times
             key down space
             delay (0.75)
             key up space
-            delay (0.75)
+            delay (0.7)
         end repeat
-        repeat 7 times
+        repeat 4 times
             key down space
-            delay (0.9)
+            delay (0.95)
             key up space
-            delay (0.75)
+            delay (0.7)
+        end repeat
+        repeat 2 times
+            key down space
+            delay (1.3)
+            key up space
+            delay (0.7)
         end repeat
     end tell
 end tell
